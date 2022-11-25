@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random.org | klen_dev</title>
+    <link rel="stylesheet" href="./bootstrap/style.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="pt-3 container">
+    <div class="d-flex jusfity-content-center align-items-center">
+        <div class="section">
+            <h3>True Random Number Generator</h3>
+            <div class="d-flex px-1 mb-2">
+                <div class="d-flex flex-column gap-2 pe-2">
+                    <label for="min">Min:</label>
+                    <label for="max">Max:</label>
+                </div>
+                <div class=" d-flex flex-column gap-2">
+                    <input id="min" type="number">
+                    <input id="max" type="number">
+                </div>
+            </div>
+            <span class="m-2"><button id="button" class="btn btn-secondary py-1">Generate</button>
+            <button id="reset" class="btn btn-danger py-1">Reset</button>
+            </span>
+            <h6 class="px-1 pt-2">Result:</h6>
+            <div class="result mx-1 p-1">
+                <h5 class="text-center" id="result"></h5>
+                <div class="text-center" id="minmax"></div>
+                <div id="time" class="text-center"></div>
+            </div>
+            <div class="text-end pe-1">Powered by klen_dev</div>
+        </div>
+    </div>
+
+
+    <script src="./bootstrap/js.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
