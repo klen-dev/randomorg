@@ -28,7 +28,7 @@ button.addEventListener("click", ()=>{
     setInterval(myTimer, 1000);
     function myTimer() {
       const d = new Date();
-      document.getElementById("time").innerHTML = d.toLocaleTimeString();
+      document.getElementById("time").innerHTML = d.toTimeString();
     }
     if(min>max){
         window.location.reload();
