@@ -12,7 +12,7 @@ resetButton.disabled = true;
 button.addEventListener("click", ()=>{
     min = min.value*1;
     max = max.value*1;
-    setInterval(myTimer, 1000);
+    setInterval(myTimer, 0);
     function myTimer() {
       const d = new Date();
       document.getElementById("time").innerHTML = d.toTimeString();
