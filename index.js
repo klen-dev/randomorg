@@ -17,7 +17,7 @@ button.addEventListener("click", ()=>{
       const d = new Date();
       document.getElementById("time").innerHTML = d.toTimeString();
     }
-    if(min>max){
+    if(min>=max){
         window.location.reload();
     }
     for(i=min; i<=max; i++){
